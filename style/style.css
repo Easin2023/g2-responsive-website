@@ -1,0 +1,135 @@
+/* sheared for font style */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Work+Sans:wght@400;500;700&display=swap');
+*{
+    font-family: 'Lato', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+/* header section */
+header{
+    background-color:rgba(255, 144, 14, 0.10);
+    padding: 20px 240px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.nav-header{
+    font-size: 3rem;
+}
+nav > ul{
+    display: flex;
+}
+nav li{
+    color: #424242;
+    list-style: none;
+    padding-right:40px ;
+    font-size: 18px;
+    font-weight: 500;
+}
+nav li a{
+    text-decoration: none;
+}
+/* banner section */
+.banner-title{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.h1-head{
+    color: #131313;
+    font-size: 64px;
+    font-weight: 700;
+}
+.title-paragraph{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+}
+.btn-sction{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 25px;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.banner-container img{
+    width: 100%;
+}
+/* responsive header */
+@media screen and (max-width:576px) {
+    nav{
+        flex-direction: column
+    }
+    header{
+        padding: 30px 50px;
+    }
+    
+}
+/* medium devise */
+@media screen and (min-width:576px) and (max-width:990px){
+    nav{
+        flex-direction: column;
+    }
+    header{
+        padding: 30px 50px;
+    }
+}
+/* main section */
+.section-1{
+    display: flex;
+    align-items: center;
+    margin:100px 200px;
+
+}
+.photo-sction{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.title-section{
+    max-width: 450px;
+    padding-left: 90px;
+}
+.section-1-title{
+    font-size: 45px;
+    font-weight: 700;
+
+}
+.sec-1-span{
+    color: #727272;
+    font-weight: 400;
+}
+.sec-1-span-2{
+    color: #FF900E;
+    font-weight: 700;
+}
+/* section-1  responsive */
+@media screen and (max-width:576px) {
+    .photo-sction{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .section-1{
+        flex-direction: column-reverse;
+        margin: 20px;
+    }
+    .title-section{
+        padding: 10px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:990px){
+    .section-1{
+        flex-direction: column-reverse;
+        margin: 20px;
+    }
+    .title-section{
+        padding:0px;
+    }
+}
