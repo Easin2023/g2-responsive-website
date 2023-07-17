@@ -16,7 +16,7 @@ nav{
    
 }
 .nav-header{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 nav > ul{
     display: flex;
@@ -61,25 +61,7 @@ nav li a{
 .banner-container img{
     width: 100%;
 }
-/* responsive header */
-@media screen and (max-width:576px) {
-    nav{
-        flex-direction: column
-    }
-    header{
-        padding: 30px 50px;
-    }
-    
-}
-/* medium devise */
-@media screen and (min-width:576px) and (max-width:990px){
-    nav{
-        flex-direction: column;
-    }
-    header{
-        padding: 30px 50px;
-    }
-}
+
 /* main section */
 .section-1{
     display: flex;
@@ -101,6 +83,11 @@ nav li a{
     font-weight: 700;
 
 }
+.sec-1-para{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+}
 .sec-1-span{
     color: #727272;
     font-weight: 400;
@@ -108,6 +95,59 @@ nav li a{
 .sec-1-span-2{
     color: #FF900E;
     font-weight: 700;
+}
+/* facts-container */
+.facts-container{
+   /* max-width: 700px; */
+   margin-left: 230px;
+}
+.sec-2-para{
+    color: #727272;
+    font-size: 13px;
+    font-weight: 400;
+    padding-right: 200px;
+}
+/* facts-section */
+.facts-section{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
+    text-align: center
+    
+}
+.facts-1{
+    border: 3px solid#FF900E;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* responsive header */
+@media screen and (max-width:576px) {
+    nav{
+        flex-direction: column
+    }
+    header{
+        padding: 30px 50px;
+    }
+    
+}
+/* medium devise */
+@media screen and (min-width:576px) and (max-width:990px){
+    nav{
+        flex-direction: column;
+    }
+    header{
+        padding: 30px 50px;
+    }
 }
 /* section-1  responsive */
 @media screen and (max-width:576px) {
@@ -131,5 +171,20 @@ nav li a{
     }
     .title-section{
         padding:0px;
+    }
+}
+/* facts-section responsive*/
+@media screen and (max-width:576px) {
+    .facts-section{
+        flex-direction: column;
+    }
+    .facts-container{
+        margin: 10px;
+    }
+    .title-or-description{
+        text-align: center;
+    }
+    .sec-2-para{
+        padding: 0;
     }
 }
